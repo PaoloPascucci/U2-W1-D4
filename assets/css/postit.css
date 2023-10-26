@@ -1,0 +1,70 @@
+body {
+  background-color: grey;
+  font-family: "Indie Flower", cursive;
+}
+.container {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.postit {
+  margin: 15px 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  line-height: 50px;
+  width: calc((100% / 4) - 160px);
+  height: 260px;
+  box-shadow: 5px 5px 5px rgb(68, 68, 68);
+  transition: transform 0.1s ease-in-out;
+  padding: 0 50px;
+}
+.postit h1 {
+  font-weight: 600;
+  font-size: 42px;
+}
+.postit p {
+  font-size: 28px;
+}
+.y {
+  background: linear-gradient(#f4f4c0 75%, grey 115%);
+}
+.p {
+  background: linear-gradient(#c6c6f2 75%, grey 115%);
+}
+.g {
+  background: linear-gradient(#baddbb 75%, grey 115%);
+}
+
+.n1,
+.n3,
+.n5,
+.n6,
+.n7 {
+  transform: rotate(355deg);
+}
+.n2,
+.n4,
+.n8 {
+  transform: rotate(5deg);
+}
+
+.postit:hover {
+  box-shadow: 8px 8px 5px rgb(68, 68, 68);
+}
+
+.n1:hover,
+.n3:hover,
+.n5:hover,
+.n6:hover,
+.n7:hover {
+  transform: rotate(360deg) scale(1.2);
+  z-index: 1;
+}
+
+.n2:hover,
+.n4:hover,
+.n8:hover {
+  transform: rotate(0deg) scale(1.2);
+  z-index: 1;
+}
